@@ -11,7 +11,6 @@ module.exports = {
       update: info.running("update.js"),
       reset: info.running("reset.js"),
       demo: info.running("demo.js"),
-      simulate: info.running("simulate.js"),
       shell: info.running("shell.js"),
       gpu: info.running("gpu.js"),
     }
@@ -50,11 +49,6 @@ module.exports = {
       running.demo
         ? { icon: "fa-solid fa-terminal", text: "Rendering Demos", href: "demo.js" }
         : { icon: "fa-solid fa-clapperboard", text: "Render Zero-Key Demos", href: "demo.js" }
-    )
-    menu.push(
-      running.simulate
-        ? { icon: "fa-solid fa-terminal", text: "Simulating Run", href: "simulate.js" }
-        : { icon: "fa-solid fa-wand-magic-sparkles", text: "Simulate a Production", href: "simulate.js" }
     )
     menu.push(
       { icon: "fa-solid fa-key", text: "API Keys (.env)", href: ".env", fs: true },

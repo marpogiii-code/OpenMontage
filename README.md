@@ -213,7 +213,7 @@ The Pinokio menu then gives you:
 
 - **Start Backlot** — runs the live storyboard on `http://127.0.0.1:4750`
 - **Agent Shell** — a terminal with the venv active; launch Claude Code, Codex, etc. here
-- **Render Zero-Key Demos** / **Simulate a Production** — try it without API keys
+- **Render Zero-Key Demos** — render sample videos without API keys
 - **API Keys (.env)**, **Projects**, **Install GPU Extras**, **Update**, **Reset**
 
 Backlot is read-only and serves JSON you can script against (only `127.0.0.1`/`localhost` Host headers are accepted):
