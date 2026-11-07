@@ -4,7 +4,10 @@ module.exports = {
       method: "shell.run",
       params: {
         venv: ".venv",
-        message: ["python scripts/backlot_simulate_run.py --project backlot-demo-run"],
+        message: [
+          "uv pip install pytest",
+          "python scripts/backlot_simulate_run.py --project backlot-demo-run",
+        ],
       },
     },
   ],

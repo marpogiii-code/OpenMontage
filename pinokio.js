@@ -1,5 +1,5 @@
 module.exports = {
-  version: "3.7",
+  version: "7.0",
   title: "OpenMontage",
   description: "Open-source agentic video production studio. Install everything, launch the Backlot live storyboard, render zero-key demos, and open an agent shell.",
   icon: "assets/logo.png",

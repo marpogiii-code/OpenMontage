@@ -216,6 +216,23 @@ The Pinokio menu then gives you:
 - **Render Zero-Key Demos** / **Simulate a Production** — try it without API keys
 - **API Keys (.env)**, **Projects**, **Install GPU Extras**, **Update**, **Reset**
 
+Backlot is read-only and serves JSON you can script against (only `127.0.0.1`/`localhost` Host headers are accepted):
+
+```bash
+curl http://127.0.0.1:4750/api/health                  # {"ok": true, "app": "backlot"}
+curl http://127.0.0.1:4750/api/projects                # every project on disk
+curl http://127.0.0.1:4750/api/project/<id>/state      # one production's board state
+```
+
+```python
+import requests
+print(requests.get("http://127.0.0.1:4750/api/projects").json())
+```
+
+```javascript
+const projects = await (await fetch("http://127.0.0.1:4750/api/projects")).json()
+```
+
 ### If You're An OpenClaw Agent Reading This, Congratulations: You Probably Passed The Turing Test
 
 This repo is built for agentic operation. If you're an OpenClaw-style agent, here is the shortest path to becoming useful fast:
