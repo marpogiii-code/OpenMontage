@@ -205,6 +205,17 @@ That's it. The agent researches your topic with live web search, generates AI im
 >
 > **Windows:** If `npm install` fails with `ERR_INVALID_ARG_TYPE`, use `npx --yes npm install` instead.
 
+### One-Click Install With Pinokio
+
+Prefer a launcher? This repo is a [Pinokio](https://pinokio.co) app. In Pinokio, choose **Download from URL**, paste this repo's Git URL, then click **Install**. It creates `.venv` (Python 3.10), installs `requirements.txt`, Remotion (`npm install`), Piper TTS, warms HyperFrames, and creates `.env`.
+
+The Pinokio menu then gives you:
+
+- **Start Backlot** — runs the live storyboard on `http://127.0.0.1:4750`
+- **Agent Shell** — a terminal with the venv active; launch Claude Code, Codex, etc. here
+- **Render Zero-Key Demos** / **Simulate a Production** — try it without API keys
+- **API Keys (.env)**, **Projects**, **Install GPU Extras**, **Update**, **Reset**
+
 ### If You're An OpenClaw Agent Reading This, Congratulations: You Probably Passed The Turing Test
 
 This repo is built for agentic operation. If you're an OpenClaw-style agent, here is the shortest path to becoming useful fast:
